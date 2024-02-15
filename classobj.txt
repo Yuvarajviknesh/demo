@@ -1,0 +1,22 @@
+class calculation:
+  def __init__(self,a,b,c):
+    self.a=a
+    self.b=b
+    self.c=c
+  def __add__(self):
+    sum1=self.a+self.b+self.c
+    print("the sum of the three number is:",sum1)
+  def __sub__(self):
+    sub=self.a-self.b-self.c
+    print("the subtraction of three numbers:",sub)
+  def __mul__(self):
+    mul=self.a*self.b*self.c
+    print("the multiplication of three number:",mul)    
+  def __div__(self):
+    div=self.a/self.b/self.c  
+    print("the division of three numbers:",div)
+cal=calculation(10,20,30)
+cal.__add__()  
+cal.__sub__()
+cal.__mul__()  
+cal.__div__()
